@@ -1,0 +1,29 @@
+{
+  "name": "mizumi",
+  "version": "2.0.0",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "description": "MIZUMI — Premium Japanese-Inspired Global Recipe Platform",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js",
+    "seed": "node server/seed.js"
+  },
+  "keywords": ["recipe", "food", "cooking", "cuisine"],
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

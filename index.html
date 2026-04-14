@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIZUMI — Elevate Your Culinary Experience</title>
+    <meta name="description" content="Explore MIZUMI, a premium global recipe platform featuring multi-cuisine options, personalized recommendations, and an immersive cooking experience.">
+    <meta property="og:title" content="MIZUMI — Elevate Your Culinary Experience">
+    <meta property="og:description" content="Discover curated recipes from top chefs worldwide. Master multi-cuisine dishes with MIZUMI.">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#09090b">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/logo.png">
+</head>
+<body>
+
+    <!-- ═══ NAVBAR ═══ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <a href="#" class="logo-group" data-view="home">
+                <div class="logo-img-wrapper">
+                    <img src="assets/logo.png" alt="MIZUMI Logo" class="brand-logo">
+                </div>
+                <div class="logo-text"><strong>MIZUMI</strong></div>
+            </a>
+
+            <!-- Desktop Nav Pill -->
+            <div class="nav-pill">
+                <a href="#" class="nav-item active" data-view="home"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="#" class="nav-item" data-view="search"><i class="fa-solid fa-compass"></i> Discover</a>
+                <a href="#" class="nav-item" data-view="favorites"><i class="fa-regular fa-heart"></i> Favorites</a>
+                <a href="#" class="nav-item" data-view="submit"><i class="fa-solid fa-plus"></i> Submit</a>
+            </div>
+
+            <!-- Utils -->
+            <div class="nav-utils">
+                <button class="icon-circle" id="user-btn" aria-label="User account">
+                    <i class="fa-regular fa-user"></i>
+                </button>
+                <div class="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ═══ MOBILE NAV OVERLAY ═══ -->
+    <div class="mobile-nav-overlay" id="mobile-nav">
+        <a href="#" class="mobile-nav-item active" data-view="home"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="#" class="mobile-nav-item" data-view="search"><i class="fa-solid fa-compass"></i> Discover</a>
+        <a href="#" class="mobile-nav-item" data-view="favorites"><i class="fa-regular fa-heart"></i> Favorites</a>
+        <a href="#" class="mobile-nav-item" data-view="submit"><i class="fa-solid fa-plus"></i> Submit</a>
+        <a href="#" class="mobile-nav-item" onclick="openAuth('login')"><i class="fa-solid fa-right-to-bracket"></i> Sign In</a>
+    </div>
+
+    <!-- ═══ AUTH MODAL ═══ -->
+    <div class="auth-overlay" id="auth-overlay">
+        <div class="auth-card">
+            <button class="auth-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="auth-content">
+                <!-- Filled dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══ MAIN APP ═══ -->
+    <main id="app-root">
+        <!-- Dynamic SPA content -->
+    </main>
+
+    <!-- ═══ TOAST NOTIFICATIONS ═══ -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- ═══ BACK TO TOP ═══ -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- App Scripts -->
+    <script src="/js/api.js?v=5"></script>
+    <script src="/js/data.js?v=5"></script>
+    <script src="/js/app.js?v=5"></script>
+</body>
+</html>
